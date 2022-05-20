@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>Welcome At ToDoApp</h1>
+    </div>
+
+    <div class="container col-md-6">
+        <div class="card">
+            <button id="btncard" class="btn btn-info"> Show Model Task </button>
+        </div>
+    </div>
+    <div class="container">
+
+        <div id="notask" class="alert alert-danger mt-5">
+            <h4>No Tasks Adedd Yet</h4>
+
+
+        </div>
+        <div id="task" class="row"></div>
+        
+    </div>
+    <div id="addmodal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Add Task</h5>
+                    <button id="closecard" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <lapel for="inputData"> Your Name</lapel>
+                    <input id="inputtask" type="text" class="form-control mt-2" placeholder="Task">
+                    <lapel for="inputData"> Your Job </lapel>
+                    <input id="inputtask" type="text" class="form-control mt-2" placeholder="Task">
+                    <lapel for="inputData"> Your Phone</lapel>
+                    <input id="inputtask" type="text" class="form-control mt-2" placeholder="Task">
+                    <lapel for="inputData"> Your Image</lapel>
+                    <input id="inputtask" type="text" class="form-control mt-2" placeholder="Task">
+                    <div id="validin" class="alert alert-danger mt-2 none">
+                        You Must Enter Data
+                        <i id="closevaild" class="close fa-regular fa-rectangle-xmark"></i>
+                    </div>
+                    <button id="btnadd" class="btn btn-outline-success btn btn-block mt-3">Add</button>
+                </div>
+                <div class="modal-footer">
+                    <button id="closecard2" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="./main.js"></script>
+</body>
+
+</html>
